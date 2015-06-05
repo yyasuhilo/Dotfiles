@@ -1,0 +1,76 @@
+
+syn match texTypeStyle "\\text\>"
+syn match texTypeStyle "\\cal\>"
+syn match texTypeStyle "\\mathscr\>"
+syn cluster texMathMatchGroup add=texEqSeparator
+syn cluster texMathZoneGroup add=texEqSeparator
+syn match texEqSeparator "&"
+syn match texEqSeparator "\\\\"
+
+syn cluster texMathMatchGroup add=texMathBeginEnd
+syn cluster texMathZoneGroup add=texMathBeginEnd
+syn match texMathBeginEnd "\\begin\>"
+syn match texMathBeginEnd "\\end\>"
+
+
+hi Normal guifg=black guibg=cornsilk
+hi texDocZone guifg=black guibg=cornsilk "地の文
+hi texAbstract guifg=black guibg=cornsilk
+hi texPartZone guifg=black guibg=cornsilk
+hi texChapterZone guifg=black guibg=cornsilk "章内での地の文
+hi texSectionZone guifg=black guibg=cornsilk "節内での地の文
+hi texSubSectionZone guifg=black guibg=cornsilk "小節内での地の文
+hi texSubSubSectionZone guifg=black guibg=cornsilk "小小節内での地の文
+hi texParaZone guifg=black guibg=cornsilk "パラグラフ内での地の文
+hi Cursor guifg=black guibg=magenta "カーソル
+hi matchParen guifg=white guibg=cyan "対応する括弧
+
+hi TexSection guifg=orange guibg=black "\begin{section},\begin{document}, etc.
+hi texDelimiter guifg=darkseagreen guibg=black "中括弧と&
+hi Special guifg=#008080 guibg=black "数式内の添字の色など
+hi texSpecialChar guifg=yellow guibg=black "数式内の改行
+hi texMathOper guifg=red guibg=black "数式内の=
+hi texEqSeparator guifg=green guibg=black "&と改行
+hi texMathBeginEnd guifg=tan guibg=black 
+
+hi texStatement guifg=aliceblue guibg=black "BackSlashから始まる文字, \begin,\end,\alpha,\beta,...
+hi texDocTypeArgs guifg=aliceblue guibg=black "\documentclass[]の中身
+hi texDocType guifg=aliceblue guibg=black "\documentclass
+hi texMath guifg=aliceblue guibg=black "数式環境内の普通の文字
+hi texMathDelim guifg=aliceblue guibg=black "\big[など 
+hi texMathMatcher guifg=aliceblue guibg=black "\text{}の括弧の中身
+hi texMathZoneX guifg=aliceblue guibg=black "$$内での括弧
+hi texSuperscripts guifg=aliceblue guibg=black "数式の上付き文字
+hi texSubscripts guifg=aliceblue guibg=black "数式の下付き文字
+hi texType guifg=aliceblue guibg=black "\textrm, \textit etc.
+
+"hi texSpaceCodeChar guifg=lightgreen
+"hi texError guifg=pink
+"hi texMathError guifg=green
+"hi TexOnlyMath guifg=blue
+"hi texSectionName guifg=green 
+"hi texSectionMarker guifg=green "\begin{section},\begin{document} etc.
+"hi texType guifg=green
+"hi texZone guifg=green
+"hi texReflavel guifg=green
+"hi texTypeStyle guifg=green
+"hi texTypeSize guifg=green
+
+"hi texInputFile guifg=green
+"hi texString guifg=orange "??
+"hi texTitle guifg=yellow "??
+"hi texBadMath guifg=red guibg=black "
+"hi texOption guifg=green
+"hi texDefParm guifg=lightgreen
+"hi texInput guifg=green
+"hi texMath guifg=aliceblue "#008080
+
+"hi Normal guifg=black guibg=white gui=none ctermfg=black ctermbg=white cterm=none "地の文
+"hi Statement guifg=red guibg=black gui=none "数式中の括弧,=など
+"hi PreProc guifg=blue guibg=moccasin gui=bold "sectionなど
+"hi Search guifg=black guibg=yellow "検索結果
+"hi Comment guifg=slategray guibg=cornsilk 
+"hi Constant guifg=darkgreen guibg=black
+"hi texMathZones guifg=white guibg=black
+"hi texZone guifg=white guibg=black
+
