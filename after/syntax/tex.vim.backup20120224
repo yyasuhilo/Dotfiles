@@ -1,0 +1,61 @@
+hi Normal guifg=black guibg=cornsilk
+hi texDocZone guifg=black guibg=cornsilk "地の文
+hi texAbstract guifg=black guibg=cornsilk
+hi texPartZone guifg=black guibg=cornsilk
+hi texChapterZone guifg=black guibg=cornsilk "章内での地の文
+hi texSectionZone guifg=black guibg=cornsilk "節内での地の文
+hi texSubSectionZone guifg=black guibg=cornsilk "小節内での地の文
+hi texSubSubSectionZone guifg=black guibg=cornsilk "小小節内での地の文
+hi texParaZone guifg=black guibg=cornsilk "パラグラフ内での地の文
+
+hi TexSection guifg=darkgreen "\begin{section},\begin{document}, etc.
+
+hi texDelimiter guifg=dodgerblue "中括弧と&
+hi Special guifg=dodgerblue "数式内の添字の色など
+hi texSpecialChar guifg=dodgerblue "数式内の改行
+hi texMathOper guifg=red "数式内の=
+
+hi texStatement guifg=#839496 "BackSlashから始まる文字, \begin,\end,\alpha,\beta,...
+hi texDocTypeArgs guifg=#839496 "\documentclass[]の中身
+hi texDocType guifg=#839496 "\documentclass
+hi texMathDelim guifg=#839496 "\big[など 
+hi texMathMatcher guifg=#839496 "\text{}の括弧の中身
+hi texMathZoneX guifg=#839496 "$$内での括弧
+
+"hi clear texStatement "BackSlashから始まる文字, \begin,\end,\alpha,\beta,...
+"hi clear texDocTypeArgs "\documentclass[]の中身
+"hi clear texDocType "\documentclass
+"hi clear texMathDelim "\big[など 
+"hi clear texMathMatcher "\text{}の括弧の中身
+"hi clear texMathZoneX "$$内での括弧
+
+"hi texSpaceCodeChar guifg=lightgreen
+"hi texError guifg=pink
+"hi texMathError guifg=green
+"hi TexOnlyMath guifg=blue
+"hi texSectionName guifg=green 
+"hi texSectionMarker guifg=green "\begin{section},\begin{document} etc.
+"hi texType guifg=green
+"hi texZone guifg=green
+"hi texReflavel guifg=green
+"hi texTypeStyle guifg=green
+"hi texTypeSize guifg=green
+
+"hi texInputFile guifg=green
+"hi texString guifg=orange "??
+"hi texTitle guifg=yellow "??
+"hi texBadMath guifg=red guibg=black "
+"hi texOption guifg=green
+"hi texDefParm guifg=lightgreen
+"hi texInput guifg=green
+"hi texMath guifg=#839496 "#008080
+
+"hi Normal guifg=black guibg=white gui=none ctermfg=black ctermbg=white cterm=none "地の文
+"hi Statement guifg=red guibg=black gui=none "数式中の括弧,=など
+"hi PreProc guifg=blue guibg=moccasin gui=bold "sectionなど
+"hi Search guifg=black guibg=yellow "検索結果
+"hi Comment guifg=slategray guibg=cornsilk 
+"hi Constant guifg=darkgreen guibg=black
+"hi texMathZones guifg=white guibg=black
+"hi texZone guifg=white guibg=black
+
